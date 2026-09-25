@@ -2,11 +2,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { cn } from "./cn";
 
+// `icon` é a versão inativa; `activeIcon` a da aba atual, quando muda.
 const ITEMS = [
-  { label: "Hoje", icon: "/figma/home/nav-hoje.svg", href: "/home" },
-  // TODO: telas de Mural e Campus.
-  { label: "Rotina", icon: "/figma/home/nav-rotina.svg", href: "/rotina" },
-  { label: "Mural", icon: "/figma/home/nav-mural.svg" },
+  {
+    label: "Hoje",
+    icon: "/figma/rotina/21f4f.svg",
+    activeIcon: "/figma/home/nav-hoje.svg",
+    href: "/home",
+  },
+  {
+    label: "Rotina",
+    icon: "/figma/home/nav-rotina.svg",
+    activeIcon: "/figma/rotina/912ad.svg",
+    href: "/rotina",
+  },
+  {
+    label: "Mural",
+    icon: "/figma/home/nav-mural.svg",
+    activeIcon: "/figma/mural/nav-mural-ativo.svg",
+    href: "/mural",
+  },
+  // TODO: tela de Campus.
   { label: "Campus", icon: "/figma/home/nav-campus.svg" },
 ];
 
@@ -28,7 +44,12 @@ export function BottomNav({ active }: { active: string }) {
                   current ? "w-12 bg-brand-soft" : "w-8",
                 )}
               >
-                <Image src={active === "Rotina" && item.label === "Hoje" ? "/figma/rotina/21f4f.svg" : active === "Rotina" && item.label === "Rotina" ? "/figma/rotina/912ad.svg" : item.icon} alt="" width={20} height={20} />
+                <Image
+                  src={(current && item.activeIcon) || item.icon}
+                  alt=""
+                  width={20}
+                  height={20}
+                />
               </span>
               <span
                 className={cn(
@@ -62,7 +83,7 @@ export function BottomNav({ active }: { active: string }) {
         })}
       </ul>
       <a
-        href={active === "Rotina" ? "/home#apoio" : "#apoio"}
+        href={active === "Hoje" ? "#apoio" : "/home#apoio"}
         className="flex flex-col items-center gap-1 rounded-full focus-visible:outline-2 focus-visible:outline-brand"
       >
         <span className="flex size-[60px] items-center justify-center rounded-full border border-brand-line bg-brand-soft">

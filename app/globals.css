@@ -12,6 +12,7 @@
   --color-ink: #111827; /* text/primary */
   --color-ink-2: #4b5563; /* text/secondary */
   --color-ink-3: #6b7280; /* text/tertiary */
+  --color-ink-4: #9ca3af; /* text/placeholder */
 
   --color-surface: #ffffff; /* surface/default */
   --color-surface-muted: #f9fafb; /* surface/muted */

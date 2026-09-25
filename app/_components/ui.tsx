@@ -17,6 +17,8 @@ const secondaryBase =
 
 export const secondaryButton = `${secondaryBase} h-12 w-full text-sm`;
 export const secondaryButtonSm = `${secondaryBase} h-10 self-start text-sm`;
+/** 44px, sem largura: par do primaryButtonSm lado a lado. */
+export const secondaryButtonMd = `${secondaryBase} h-11 text-sm`;
 /** 54px, sem largura: combine com w-full ou uma largura fixa. */
 export const secondaryButtonLg = `${secondaryBase} h-[54px] text-xl`;
 
