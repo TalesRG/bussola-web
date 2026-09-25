@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="390" height="360" viewBox="0 0 390 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ilustra&#195;&#167;&#195;&#163;o">
+<circle id="Ellipse" cx="195" cy="175" r="115" fill="#C4B5FD"/>
+<circle id="Ellipse_2" cx="195" cy="175" r="90" fill="#E8EEFD"/>
+<rect id="Rectangle" x="192" y="89" width="6" height="16" rx="3" fill="#A78BFA"/>
+<rect id="Rectangle_2" x="265" y="172" width="16" height="6" rx="3" fill="#A78BFA"/>
+<rect id="Rectangle_3" x="192" y="245" width="6" height="16" rx="3" fill="#A78BFA"/>
+<rect id="Rectangle_4" x="109" y="172" width="16" height="6" rx="3" fill="#A78BFA"/>
+<g id="Agulha">
+<path id="Agulha norte" d="M227.863 113.194L214.425 185.328L175.575 164.672L227.863 113.194Z" fill="#F472B6"/>
+<path id="Agulha sul" d="M175.575 164.672L214.425 185.329L162.137 236.807L175.575 164.672Z" fill="#FDBA74"/>
+</g>
+<circle id="Ellipse_3" cx="195" cy="175" r="9" fill="white"/>
+<path id="Star" d="M68 40L70.2627 45.7373L76 48L70.2627 50.2627L68 56L65.7373 50.2627L60 48L65.7373 45.7373L68 40Z" fill="#FDE047"/>
+<path id="Star_2" d="M324 70L325.697 74.3029L330 76L325.697 77.6971L324 82L322.303 77.6971L318 76L322.303 74.3029L324 70Z" fill="#F9A8D4"/>
+<path id="Star_3" d="M309 280L311.546 286.454L318 289L311.546 291.546L309 298L306.454 291.546L300 289L306.454 286.454L309 280Z" fill="#5EC4B6"/>
+<path id="Star_4" d="M76 270L77.6971 274.303L82 276L77.6971 277.697L76 282L74.3029 277.697L70 276L74.3029 274.303L76 270Z" fill="#FDE047"/>
+</g>
+</svg>

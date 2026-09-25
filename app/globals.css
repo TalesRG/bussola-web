@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* Tokens do design system "Saúde UnB" (Figma) */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-krub);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand: #2f6bd8; /* action/primary-bg, border/brand-strong */
+  --color-brand-ink: #2556b0; /* text/brand, action/secondary-fg */
+  --color-brand-soft: #f3f7fe; /* bg/brand-soft */
+
+  --color-ink: #111827; /* text/primary */
+  --color-ink-2: #4b5563; /* text/secondary */
+  --color-ink-3: #6b7280; /* text/tertiary */
+
+  --color-surface: #ffffff; /* surface/default */
+  --color-surface-muted: #f9fafb; /* surface/muted */
+  --color-line: #e5e7eb; /* border/default */
+  --color-line-muted: #d1d5db; /* border/muted */
+
+  --color-lilac: #c4b5fd;
+  --color-lilac-light: #efebfe;
+  --color-teal: #5ec4b6;
+  --color-yellow: #fde047;
+  --color-yellow-light: #fef9d7;
+  --color-paper: #e8eefd;
+
+  --color-subtle: #f3f4f6; /* bg/subtle, border/subtle */
+  --color-brand-line: #c7d9f8; /* border/brand */
+  --color-azure-100: #e3ecfc;
+  --color-azure-300: #9dbdf2;
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-500: #d97706;
+  --color-amber-800: #92400e;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+/* Slider "Estudar no máximo por dia": trilho 6px, preenchimento via --fill */
+.range-slider {
+  appearance: none;
+  height: 28px;
+  width: 100%;
+  cursor: pointer;
+  background: linear-gradient(
+      to right,
+      var(--color-brand) var(--fill),
+      var(--color-subtle) var(--fill)
+    )
+    center / 100% 6px no-repeat;
+  border-radius: 999px;
+}
+.range-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  background: url("/figma/agenda/slider-thumb.svg") center / contain;
+}
+.range-slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border: 0;
+  background: url("/figma/agenda/slider-thumb.svg") center / contain;
+}
+.range-slider:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 4px;
 }
