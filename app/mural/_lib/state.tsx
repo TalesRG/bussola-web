@@ -69,6 +69,8 @@ export function MuralProvider({ children }: { children: ReactNode }) {
   const [sentAt, setSentAt] = useState<Date | null>(null);
   const [reactions, setReactions] = useState<Record<string, Reaction[]>>({
     marina: ["ajudou"],
+    "video:marina": ["ajudou"],
+    "video:ajuda": ["ajudou"],
   });
   const [saved, setSaved] = useState<string[]>([]);
   const [inAgenda, setInAgenda] = useState<string[]>([]);

@@ -78,11 +78,10 @@ export function SourceBadge({ sigla, tone }: { sigla: string; tone: SourceTone }
 }
 
 /** Topo das abas do Mural: título, avatar e seletor Histórias/Vídeos/Avisos. */
-export function MuralTop({ active }: { active: "Histórias" | "Avisos" }) {
+export function MuralTop({ active }: { active: "Histórias" | "Vídeos" | "Avisos" }) {
   const tabs = [
     { label: "Histórias", href: "/mural" },
-    // TODO: aba de Vídeos.
-    { label: "Vídeos" },
+    { label: "Vídeos", href: "/mural/videos" },
     { label: "Avisos", href: "/mural/avisos" },
   ];
   return (

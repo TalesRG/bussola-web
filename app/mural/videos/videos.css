@@ -1,0 +1,24 @@
+.video-progress {
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.video-progress::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+.video-progress::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+.video-progress:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 6px;
+}
